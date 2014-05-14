@@ -1,0 +1,101 @@
+Source: baloo
+Section: kde
+Priority: optional
+Maintainer: Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
+Uploaders: Rohan Garg <rohangarg@kubuntu.org>,
+           Maximiliano Curia <maxy@debian.org>
+Build-Depends: debhelper (>= 9), cmake,
+ pkg-kde-tools,
+ kde-sc-dev-latest (>= 4:4.13),
+ kdelibs5-dev (>= 4:4.13.0),
+ kdepimlibs5-dev (>= 4:4.13.0),
+ libkfilemetadata-dev (>= 4:4.13.0),
+ libxapian-dev,
+ libqjson-dev,
+ libattr1-dev,
+ libakonadi-dev (>= 1.11.80),
+ libboost1.55-dev
+Standards-Version: 3.9.5
+Homepage: http://projects.kde.org/baloo
+Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-kde/kde-sc/baloo.git
+Vcs-Git: git://anonscm.debian.org/pkg-kde/kde-sc/baloo.git
+
+Package: baloo
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Replaces: kde-runtime (<< 4:4.12.80), kde-runtime-data (<< 4:4.12.80),
+Breaks: kde-runtime (<< 4:4.12.80), kde-runtime-data (<< 4:4.12.80),
+Description: framework for searching and managing metadata.
+ A framework for searching and managing metadata in KDE.
+
+Package: libbaloocore4
+Architecture: any
+Section: libdevel
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Core funcationality for Baloo
+ Baloo is a framework for searching and managing metadata.
+ .
+ This package contains the baloo core library.
+ .
+ Baloo is part of KDE SC.
+
+Package: libbaloofiles4
+Architecture: any
+Section: libdevel
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Files funcationality for Baloo
+ Baloo is a framework for searching and managing metadata.
+ .
+ This package contains the baloo files library.
+ .
+ Baloo is part of KDE SC.
+
+Package: libbaloopim4
+Architecture: any
+Section: libdevel
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: PIM funcationality for Baloo
+ Baloo is a framework for searching and managing metadata.
+ .
+ This package contains the baloo PIM library.
+ .
+ Baloo is part of KDE SC.
+
+Package: libbalooxapian4
+Architecture: any
+Section: libdevel
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Xapian funcationality for Baloo
+ Baloo is a framework for searching and managing metadata.
+ .
+ This package contains the baloo Xapian library.
+ .
+ Baloo is part of KDE SC.
+
+Package: baloo-dev
+Architecture: any
+Section: libdevel
+Depends: libbaloocore4 (= ${binary:Version}),
+ libbaloofiles4 (= ${binary:Version}),
+ libbaloopim4 (= ${binary:Version}),
+ libbalooxapian4 (= ${binary:Version}),
+ ${shlibs:Depends},
+ ${misc:Depends}
+Description: Development headers for developing applications with Baloo
+ Baloo is a framework for searching and managing metadata.
+ .
+ This package contains development headers for baloo.
+ .
+ Baloo is part of KDE SC.
+
+Package: baloo-dbg
+Architecture: any
+Depends: baloo (= ${binary:Version}), ${misc:Depends}
+Priority: extra
+Section: debug
+Description: Debugging symbols for baloo
+ Baloo is a framework for searching and managing metadata in KDE.
+ .
+ This package contains debugging symbols for Baloo.
+ .
+ Baloo is part of KDE SC.

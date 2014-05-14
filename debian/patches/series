@@ -1,0 +1,2 @@
+upstream_catch_more_exceptions_emailsearchstore.patch
+upstream_FileIndexingQueue-Catch-exception.patch

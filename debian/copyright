@@ -1,0 +1,179 @@
+Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: baloo
+Source: git://anongit.kde.org/baloo
+
+Files: *
+Copyright: 2010, 2010-13, 2010-14, 2011-2014 Vishesh Handa <me@vhanda.in>
+           2007-2011 Sebastian Trueg <trueg@kde.org>
+           2013 Simeon Bird <bladud@gmail.com>
+           2013 Daniel Vrátil <dvratil@redhat.com>
+           2014  Christian Mollekopf <mollekopf@kolabsys.com>
+           2014 Laurent Montel <montel@kde.org>
+License: LGPL 2.1 or 3 or approved by KDE e.V.
+ This library is free software; you can redistribute it and/or
+ modify it under the terms of the GNU Lesser General Public
+ License as published by the Free Software Foundation; either
+ version 2.1 of the License, or (at your option) version 3, or any
+ later version accepted by the membership of KDE e.V. (or its
+ successor approved by the membership of KDE e.V.), which shall
+ act as a proxy defined in Section 6 of version 3 of the license.
+ .
+ This library is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+ Lesser General Public License for more details.
+ .
+ You should have received a copy of the GNU Lesser General Public
+ License along with this library.  If not, see <http://www.gnu.org/licenses/>.
+
+Files:  src/file/eventmonitor.cpp
+        src/file/eventmonitor.h
+        src/file/fileexcludefilters.cpp
+        src/file/fileexcludefilters.h
+        src/file/fileindexer.cpp
+        src/file/fileindexer.h
+        src/file/fileindexerconfig.cpp
+        src/file/fileindexerconfig.h
+        src/file/filewatch.cpp
+        src/file/filewatch.h
+        src/file/indexscheduler.cpp
+        src/file/indexscheduler.h
+        src/file/metadatamover.cpp
+        src/file/metadatamover.h
+        src/file/priority.cpp
+        src/file/priority.h
+        src/file/kcm/kcm.cpp
+        src/file/kcm/kcm.h
+        src/kioslaves/timeline/timelinetools.h
+Copyright: 2008 Sebastian Trueg <trueg@kde.org>
+           2010-14 Vishesh Handa <me@vhanda.in>
+License: LGPL-2
+ This program is free software; you can redistribute it and/or
+ modify it under the terms of the GNU General Public License as
+ published by the Free Software Foundation; either version 2 of
+ the License or (at your option) version 3 or any later version
+ accepted by the membership of KDE e.V. (or its successor approved
+ by the membership of KDE e.V.), which shall act as a proxy
+ defined in Section 14 of version 3 of the license.
+ .
+ This program is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU General Public License for more details.
+ .
+ You should have received a copy of the GNU General Public License
+ along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+Files: src/core/core_export.h
+       src/file/kinotify.cpp
+       src/file/kinotify.h
+       src/file/lib/file_export.h
+       src/pim/lib/pim_export.h
+       src/xapian/xapian_export.h
+Copyright: 2007 David Faure <faure@kde.org>
+           2007-2010 Sebastian Trueg <trueg@kde.org>
+           2012 Vishesh Handa <me@vhanda.in>
+License: LGPL-2+
+ This library is free software; you can redistribute it and/or
+ modify it under the terms of the GNU Library General Public
+ License as published by the Free Software Foundation; either
+ version 2 of the License, or (at your option) any later version.
+ .
+ This library is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+ Library General Public License for more details.
+ .
+ You should have received a copy of the GNU Library General Public License
+ along with this library; see the file COPYING.LIB.  If not, write to
+ the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor,
+ Boston, MA 02110-1301, USA.
+
+Files: icons/*
+       autotests/search.cpp
+       src/file/autotest/kinotifytest.h
+       src/file/autotest/kinotifytest.cpp
+       src/tools/balooshow/main.cpp
+       src/kioslaves/timeline/kio_timeline.cpp
+       src/kioslaves/search/kio_search.cpp
+       src/pim/agent/emailindexer.h
+       src/pim/agent/abstractindexer.h
+       src/pim/agent/contactindexer.h
+       src/pim/agent/abstractindexer.cpp
+Copyright: 2013 Vishesh Handa <me@vhanda.in>
+           2007 David Faure <faure@kde.org>
+License: GPL 2 or 3 or approved by KDE e.V.
+ This program is free software; you can redistribute it and/or
+ modify it under the terms of the GNU General Public License as
+ published by the Free Software Foundation; either version 2 of
+ the License or (at your option) version 3 or any later version
+ accepted by the membership of KDE e.V. (or its successor approved
+ by the membership of KDE e.V.), which shall act as a proxy
+ defined in Section 14 of version 3 of the license.
+ .
+ This program is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU General Public License for more details.
+ .
+ You should have received a copy of the GNU General Public License
+ along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+Files: src/file/fileexcludefilters.h
+       src/file/kcm/kcm.h
+       src/file/kcm/kcm.cpp
+       src/file/indexscheduler.cpp
+       src/file/metadatamover.cpp
+       src/file/metadatamover.h
+       src/file/fileindexer.cpp
+       src/file/priority.cpp
+       src/file/fileindexerconfig.h
+       src/file/filewatch.cpp
+       src/file/fileindexer.h
+       src/file/indexscheduler.h
+       src/file/fileexcludefilters.cpp
+       src/file/eventmonitor.h
+       src/file/eventmonitor.cpp
+       src/file/filewatch.h
+       src/file/fileindexerconfig.cpp
+       src/file/priority.h
+       src/kioslaves/timeline/timelinetools.h
+Copyright: 2007-2010 Sebastian Trueg <trueg@kde.org>
+           2012-2014 Vishesh Handa <me@vhanda.in>
+License: GPL-2
+ This library is free software; you can redistribute it and/or
+ modify it under the terms of the GNU Library General Public
+ License version 2 as published by the Free Software Foundation.
+ .
+ This library is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+ Library General Public License for more details.
+ .
+ You should have received a copy of the GNU Library General Public License
+ along with this library; see the file COPYING.LIB.  If not, write to
+ the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor,
+ Boston, MA 02110-1301, USA.
+
+Files: src/xapian/xapian_export.h
+       src/core/core_export.h
+       debian/*
+Copyright: 2014 Jonathan Riddell <jriddell@ubuntu.com>
+           2014 Maximiliano Curia <maxy@debian.org>
+           2014 Scarlett Clark <scarlett@scarlettgatelyclark.com>
+License: GPL-2+
+ This package is free software; you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation; either version 2 of the License, or
+ (at your option) any later version.
+ .
+ This package is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU General Public License for more details.
+ .
+ You should have received a copy of the GNU General Public License
+ along with this program. If not, see <http://www.gnu.org/licenses/>
+ .
+ On Debian systems, the complete text of the GNU General
+ Public License version 2 can be found in "/usr/share/common-licenses/GPL-2".

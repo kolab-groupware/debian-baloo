@@ -1,0 +1,30 @@
+commit a7386f97164dbc9b67e032ed57ffe563d5d41ba9
+Author: Vishesh Handa <me@vhanda.in>
+Date:   Tue Apr 15 15:22:00 2014 +0200
+
+    FileIndexingQueue: Catch exception
+    
+    This can happen in the case when the extractor fails to index a file and
+    at the same time managed to remove the indexed data from the xapian db.
+    So weird.
+
+diff --git a/src/file/fileindexingqueue.cpp b/src/file/fileindexingqueue.cpp
+index 6c1e946..bfce37e 100644
+--- a/src/file/fileindexingqueue.cpp
++++ b/src/file/fileindexingqueue.cpp
+@@ -98,10 +98,13 @@ void FileIndexingQueue::slotFinishedIndexingFile(KJob*)
+ void FileIndexingQueue::slotIndexingFailed(uint id)
+ {
+     m_db->xapianDatabase()->db()->reopen();
+-    Xapian::Document doc = m_db->xapianDatabase()->db()->get_document(id);
+-
+-    updateIndexingLevel(doc, -1);
+-    Q_EMIT newDocument(id, doc);
++    Xapian::Document doc;
++    try {
++        Xapian::Document doc = m_db->xapianDatabase()->db()->get_document(id);
++        updateIndexingLevel(doc, -1);
++        Q_EMIT newDocument(id, doc);
++    } catch (const Xapian::Error& err) {
++    }
+ }

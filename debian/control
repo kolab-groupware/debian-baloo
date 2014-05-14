@@ -4,17 +4,18 @@ Priority: optional
 Maintainer: Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
 Uploaders: Rohan Garg <rohangarg@kubuntu.org>,
            Maximiliano Curia <maxy@debian.org>
-Build-Depends: debhelper (>= 9), cmake,
- pkg-kde-tools,
- kde-sc-dev-latest (>= 4:4.13),
- kdelibs5-dev (>= 4:4.13.0),
- kdepimlibs5-dev (>= 4:4.13.0),
- libkfilemetadata-dev (>= 4:4.13.0),
- libxapian-dev,
- libqjson-dev,
- libattr1-dev,
- libakonadi-dev (>= 1.11.80),
- libboost1.55-dev
+Build-Depends: cmake,
+               debhelper (>= 9),
+               kde-sc-dev-latest (>= 4:4.13),
+               kdelibs5-dev (>= 4:4.13.0),
+               kdepimlibs5-dev (>= 4:4.13.0),
+               libakonadi-dev (>= 1.11.80),
+               libattr1-dev,
+               libboost1.55-dev,
+               libkfilemetadata-dev (>= 4:4.13.0),
+               libqjson-dev,
+               libxapian-dev,
+               pkg-kde-tools
 Standards-Version: 3.9.5
 Homepage: http://projects.kde.org/baloo
 Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-kde/kde-sc/baloo.git
@@ -22,16 +23,16 @@ Vcs-Git: git://anonscm.debian.org/pkg-kde/kde-sc/baloo.git
 
 Package: baloo
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}
-Replaces: kde-runtime (<< 4:4.12.80), kde-runtime-data (<< 4:4.12.80),
-Breaks: kde-runtime (<< 4:4.12.80), kde-runtime-data (<< 4:4.12.80),
+Depends: ${misc:Depends}, ${shlibs:Depends}
+Replaces: kde-runtime (<< 4:4.12.80), kde-runtime-data (<< 4:4.12.80)
+Breaks: kde-runtime (<< 4:4.12.80), kde-runtime-data (<< 4:4.12.80)
 Description: framework for searching and managing metadata.
  A framework for searching and managing metadata in KDE.
 
 Package: libbaloocore4
 Architecture: any
 Section: libdevel
-Depends: ${shlibs:Depends}, ${misc:Depends}
+Depends: ${misc:Depends}, ${shlibs:Depends}
 Description: Core funcationality for Baloo
  Baloo is a framework for searching and managing metadata.
  .
@@ -42,7 +43,7 @@ Description: Core funcationality for Baloo
 Package: libbaloofiles4
 Architecture: any
 Section: libdevel
-Depends: ${shlibs:Depends}, ${misc:Depends}
+Depends: ${misc:Depends}, ${shlibs:Depends}
 Description: Files funcationality for Baloo
  Baloo is a framework for searching and managing metadata.
  .
@@ -53,7 +54,7 @@ Description: Files funcationality for Baloo
 Package: libbaloopim4
 Architecture: any
 Section: libdevel
-Depends: ${shlibs:Depends}, ${misc:Depends}
+Depends: ${misc:Depends}, ${shlibs:Depends}
 Description: PIM funcationality for Baloo
  Baloo is a framework for searching and managing metadata.
  .
@@ -64,7 +65,7 @@ Description: PIM funcationality for Baloo
 Package: libbalooxapian4
 Architecture: any
 Section: libdevel
-Depends: ${shlibs:Depends}, ${misc:Depends}
+Depends: ${misc:Depends}, ${shlibs:Depends}
 Description: Xapian funcationality for Baloo
  Baloo is a framework for searching and managing metadata.
  .
@@ -76,11 +77,11 @@ Package: baloo-dev
 Architecture: any
 Section: libdevel
 Depends: libbaloocore4 (= ${binary:Version}),
- libbaloofiles4 (= ${binary:Version}),
- libbaloopim4 (= ${binary:Version}),
- libbalooxapian4 (= ${binary:Version}),
- ${shlibs:Depends},
- ${misc:Depends}
+         libbaloofiles4 (= ${binary:Version}),
+         libbaloopim4 (= ${binary:Version}),
+         libbalooxapian4 (= ${binary:Version}),
+         ${misc:Depends},
+         ${shlibs:Depends}
 Description: Development headers for developing applications with Baloo
  Baloo is a framework for searching and managing metadata.
  .

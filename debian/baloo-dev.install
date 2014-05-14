@@ -1,3 +1,3 @@
 usr/include/baloo
-usr/lib/libbaloo*.so
 usr/lib/cmake/Baloo/
+usr/lib/libbaloo*.so

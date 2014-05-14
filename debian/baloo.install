@@ -1,8 +1,8 @@
 etc/dbus-1/system.d/org.kde.baloo.*
 usr/bin/akonadi_baloo_indexer
 usr/bin/baloo*
-usr/lib/kde4/akonadi/akonadibaloosearchplugin.desktop
 usr/lib/kde4/akonadi/akonadi_baloo_searchplugin.so
+usr/lib/kde4/akonadi/akonadibaloosearchplugin.desktop
 usr/lib/kde4/baloo_*.so
 usr/lib/kde4/kcm_baloofile.so
 usr/lib/kde4/kio_baloosearch.so

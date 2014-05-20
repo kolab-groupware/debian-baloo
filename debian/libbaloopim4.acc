@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<descriptor>
+
+<version>
+    4.13.1
+</version>
+
+<headers>
+    /usr/include/baloo/term.h
+    /usr/include/baloo/query.h
+    /usr/include/baloo/queryrunnable.h
+    /usr/include/baloo/result.h
+    /usr/include/baloo/resultiterator.h
+    /usr/include/baloo/searchstore.h
+    /usr/include/baloo/core_export.h
+</headers>
+
+<libs>
+    /usr/lib/libbaloocore.so
+</libs>
+
+</descriptor>

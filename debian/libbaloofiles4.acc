@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<descriptor>
+
+<version>
+    4.13.1
+</version>
+
+<headers>
+    /usr/include/baloo/file.h
+    /usr/include/baloo/filefetchjob.h
+    /usr/include/baloo/filemodifyjob.h
+    /usr/include/baloo/filemonitor.h
+    /usr/include/baloo/taglistjob.h
+    /usr/include/baloo/indexerconfig.h
+    /usr/include/baloo/file_export.h
+</headers>
+
+<libs>
+    /usr/lib/libbaloofiles.so
+</libs>
+
+</descriptor>

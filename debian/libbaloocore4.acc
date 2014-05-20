@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<descriptor>
+
+<version>
+    4.13.1
+</version>
+
+<headers>
+    /usr/include/baloo/pim
+</headers>
+
+<libs>
+    /usr/lib/libbaloopim.so
+</libs>
+
+</descriptor>

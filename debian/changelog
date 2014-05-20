@@ -4,5 +4,6 @@ baloo (4:4.13.1-1~) UNRELEASED; urgency=medium
   * Update build dependencies.
   * Update symbols files.
   * New patch: disable_tests_depending_on_revdep
+  * Add dh-acc files.
 
  -- Maximiliano Curia <maxy@debian.org>  Wed, 14 May 2014 13:23:13 +0200

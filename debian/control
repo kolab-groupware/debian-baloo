@@ -17,6 +17,7 @@ Build-Depends: cmake,
                libxapian-dev,
                pkg-kde-tools
 Standards-Version: 3.9.5
+XS-Testsuite: autopkgtest
 Homepage: http://projects.kde.org/baloo
 Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-kde/kde-sc/baloo.git
 Vcs-Git: git://anonscm.debian.org/pkg-kde/kde-sc/baloo.git

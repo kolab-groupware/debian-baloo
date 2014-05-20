@@ -1,0 +1,122 @@
+Index: baloo/src/pim/agent/autotests/CMakeLists.txt
+===================================================================
+--- baloo.orig/src/pim/agent/autotests/CMakeLists.txt	2014-05-20 17:59:58.781066129 +0200
++++ baloo/src/pim/agent/autotests/CMakeLists.txt	2014-05-20 18:02:39.430773398 +0200
+@@ -2,29 +2,29 @@
+   ${CMAKE_CURRENT_SOURCE_DIR}/..
+ )
+ 
+-set(indexertest_SRCS
+-    indexertest.cpp
+-    ../emailindexer.cpp
+-    ../contactindexer.cpp
+-    ../abstractindexer.cpp
+-    ../../search/pimsearchstore.cpp
+-    ../../search/email/emailsearchstore.cpp
+-    ../../search/email/agepostingsource.cpp
+-    ../../search/contact/contactsearchstore.cpp
+-)
++# set(indexertest_SRCS
++#     indexertest.cpp
++#     ../emailindexer.cpp
++#     ../contactindexer.cpp
++#     ../abstractindexer.cpp
++#     ../../search/pimsearchstore.cpp
++#     ../../search/email/emailsearchstore.cpp
++#     ../../search/email/agepostingsource.cpp
++#     ../../search/contact/contactsearchstore.cpp
++# )
+ 
+-add_definitions(-DBALOO_NO_PLUGINS=TRUE)
++# add_definitions(-DBALOO_NO_PLUGINS=TRUE)
+ 
+-kde4_add_unit_test(indexertest NOGUI ${indexertest_SRCS})
+-target_link_libraries(indexertest
+-    ${QT_QTTEST_LIBRARY}
+-    ${KDE4_KDECORE_LIBS}
+-    ${KDEPIMLIBS_AKONADI_LIBS}
+-    ${KDEPIMLIBS_AKONADI_KMIME_LIBS}
+-    ${KDEPIMLIBS_KMIME_LIBS}
+-    ${KDEPIMLIBS_KABC_LIBS}
+-    ${XAPIAN_LIBRARIES}
+-    ${KDEPIMLIBS_KPIMUTILS_LIBS}
+-    baloocore
+-    balooxapian
+-)
++# kde4_add_unit_test(indexertest NOGUI ${indexertest_SRCS})
++# target_link_libraries(indexertest
++#     ${QT_QTTEST_LIBRARY}
++#     ${KDE4_KDECORE_LIBS}
++#     ${KDEPIMLIBS_AKONADI_LIBS}
++#     ${KDEPIMLIBS_AKONADI_KMIME_LIBS}
++#     ${KDEPIMLIBS_KMIME_LIBS}
++#     ${KDEPIMLIBS_KABC_LIBS}
++#     ${XAPIAN_LIBRARIES}
++#     ${KDEPIMLIBS_KPIMUTILS_LIBS}
++#     baloocore
++#     balooxapian
++# )
+Index: baloo/src/pim/akonadiplugin/autotests/CMakeLists.txt
+===================================================================
+--- baloo.orig/src/pim/akonadiplugin/autotests/CMakeLists.txt	2014-05-20 17:59:58.781066129 +0200
++++ baloo/src/pim/akonadiplugin/autotests/CMakeLists.txt	2014-05-20 18:02:56.826091845 +0200
+@@ -2,32 +2,32 @@
+   ${CMAKE_CURRENT_SOURCE_DIR}/..
+ )
+ 
+-set(searchplugintest_SRCS
+-    searchplugintest.cpp
+-    ../searchplugin.cpp
+-    ../../agent/emailindexer.cpp
+-    ../../agent/contactindexer.cpp
+-    ../../agent/abstractindexer.cpp
+-    ../../agent/akonotesindexer.cpp
+-    ../../search/pimsearchstore.cpp
+-    ../../search/email/emailsearchstore.cpp
+-    ../../search/email/agepostingsource.cpp
+-    ../../search/contact/contactsearchstore.cpp
+-    ../../search/note/notesearchstore.cpp
+-)
++# set(searchplugintest_SRCS
++#     searchplugintest.cpp
++#     ../searchplugin.cpp
++#     ../../agent/emailindexer.cpp
++#     ../../agent/contactindexer.cpp
++#     ../../agent/abstractindexer.cpp
++#     ../../agent/akonotesindexer.cpp
++#     ../../search/pimsearchstore.cpp
++#     ../../search/email/emailsearchstore.cpp
++#     ../../search/email/agepostingsource.cpp
++#     ../../search/contact/contactsearchstore.cpp
++#     ../../search/note/notesearchstore.cpp
++# )
+ 
+-add_definitions(-DBALOO_NO_PLUGINS=TRUE)
++# add_definitions(-DBALOO_NO_PLUGINS=TRUE)
+ 
+-kde4_add_unit_test(searchplugintest NOGUI ${searchplugintest_SRCS})
+-target_link_libraries(searchplugintest
+-    ${QT_QTTEST_LIBRARY}
+-    ${KDE4_KDECORE_LIBS}
+-    ${KDEPIMLIBS_AKONADI_LIBS}
+-    ${KDEPIMLIBS_AKONADI_KMIME_LIBS}
+-    ${KDEPIMLIBS_KMIME_LIBS}
+-    ${KDEPIMLIBS_KABC_LIBS}
+-    ${XAPIAN_LIBRARIES}
+-    ${KDEPIMLIBS_KPIMUTILS_LIBS}
+-    baloocore
+-    balooxapian
+-)
++# kde4_add_unit_test(searchplugintest NOGUI ${searchplugintest_SRCS})
++# target_link_libraries(searchplugintest
++#     ${QT_QTTEST_LIBRARY}
++#     ${KDE4_KDECORE_LIBS}
++#     ${KDEPIMLIBS_AKONADI_LIBS}
++#     ${KDEPIMLIBS_AKONADI_KMIME_LIBS}
++#     ${KDEPIMLIBS_KMIME_LIBS}
++#     ${KDEPIMLIBS_KABC_LIBS}
++#     ${XAPIAN_LIBRARIES}
++#     ${KDEPIMLIBS_KPIMUTILS_LIBS}
++#     baloocore
++#     balooxapian
++# )

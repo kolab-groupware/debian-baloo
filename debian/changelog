@@ -3,5 +3,6 @@ baloo (4:4.13.1-1~) UNRELEASED; urgency=medium
   * Initial release, based on the kubuntu package.
   * Update build dependencies.
   * Update symbols files.
+  * New patch: disable_tests_depending_on_revdep
 
  -- Maximiliano Curia <maxy@debian.org>  Wed, 14 May 2014 13:23:13 +0200

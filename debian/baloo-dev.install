@@ -1,3 +1,4 @@
 usr/include/baloo
 usr/lib/cmake/Baloo/
 usr/lib/libbaloo*.so
+usr/share/dbus-1/interfaces/org.kde.baloo.*.xml

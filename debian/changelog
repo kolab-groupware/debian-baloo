@@ -1,4 +1,4 @@
-baloo (4:4.13.1-1~) UNRELEASED; urgency=medium
+baloo (4:4.13.1-1) experimental; urgency=medium
 
   * Initial release, based on the kubuntu package.
   * Update build dependencies.
@@ -7,4 +7,4 @@ baloo (4:4.13.1-1~) UNRELEASED; urgency=medium
   * Add dh-acc files.
   * Add dbus interface file to the -dev package.
 
- -- Maximiliano Curia <maxy@debian.org>  Wed, 14 May 2014 13:23:13 +0200
+ -- Maximiliano Curia <maxy@debian.org>  Mon, 26 May 2014 13:25:45 +0200

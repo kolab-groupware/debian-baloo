@@ -1,0 +1,6 @@
+etc/dbus-1/system.d/org.kde.baloo.*
+usr/bin/baloo*
+usr/share/autostart/baloo_*
+usr/share/dbus-1/system-services/org.kde.baloo.*
+usr/share/icons/*/*/apps/baloo.png
+usr/share/polkit-1/actions/org.kde.baloo.*

@@ -1,5 +1,5 @@
-# SymbolsHelper-Confirmed: 4:4.13.1 amd64
-libbalooxapian.so.4 libbalooxapian4 #MINVER#, baloo
+# SymbolsHelper-Confirmed: 4:4.13.3 alpha arm64 armel armhf hppa hurd-i386 i386 kfreebsd-amd64 kfreebsd-i386 mips mipsel powerpc ppc64 s390x sparc
+libbalooxapian.so.4 libbalooxapian4 #MINVER#
  _ZN5Baloo14XapianDatabase14deleteDocumentEj@Base 4:4.12.97
  _ZN5Baloo14XapianDatabase15replaceDocumentEjRKN6Xapian8DocumentE@Base 4:4.12.97
  _ZN5Baloo14XapianDatabase15replaceDocumentEjRKNS_14XapianDocumentE@Base 4:4.13.0
@@ -42,9 +42,6 @@ libbalooxapian.so.4 libbalooxapian4 #MINVER#, baloo
  _ZN5Baloo17XapianSearchStore9setDbPathERK7QString@Base 4:4.12.80
  _ZN5Baloo17XapianSearchStoreC1EP7QObject@Base 4:4.12.80
  _ZN5Baloo17XapianSearchStoreC2EP7QObject@Base 4:4.12.80
- (optional=gccinternal|arch=!amd64)_ZN5Baloo17XapianSearchStoreD0Ev@Base 4:4.12.80
- (optional=gccinternal|arch=!amd64)_ZN5Baloo17XapianSearchStoreD1Ev@Base 4:4.12.80
- (optional=gccinternal|arch=!amd64)_ZN5Baloo17XapianSearchStoreD2Ev@Base 4:4.12.80
  (optional=templinst)_ZN6Xapian5QueryC1IPS0_EENS0_2opET_S4_j@Base 4:4.12.80
  (optional=templinst)_ZN6Xapian5QueryC2IPS0_EENS0_2opET_S4_j@Base 4:4.12.80
  _ZNK5Baloo14XapianDocument3docEv@Base 4:4.13.0

@@ -1,0 +1,17 @@
+usr/bin/akonadi_baloo_indexer
+usr/lib/kde4/akonadi/akonadi_baloo_searchplugin.so
+usr/lib/kde4/akonadi/akonadibaloosearchplugin.desktop
+usr/lib/kde4/baloo_*.so
+usr/lib/kde4/kcm_baloofile.so
+usr/lib/kde4/kio_baloosearch.so
+usr/lib/kde4/kio_tags.so
+usr/lib/kde4/kio_timeline.so
+usr/lib/kde4/krunner_baloosearchrunner.so
+usr/lib/kde4/libexec/kde_baloo_filewatch_raiselimit
+usr/share/akonadi/agents/akonadibalooindexingagent.desktop
+usr/share/kde4/services/baloo*
+usr/share/kde4/services/kcm_baloofile.desktop
+usr/share/kde4/services/plasma-runner-baloosearch.desktop
+usr/share/kde4/services/tags.protocol
+usr/share/kde4/services/timeline.protocol
+usr/share/kde4/servicetypes/baloosearchstore.desktop

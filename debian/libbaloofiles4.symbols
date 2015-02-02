@@ -1,5 +1,5 @@
 # SymbolsHelper-Confirmed: 4:4.12.97-0ubuntu2 amd64 i386
-libbaloofiles.so.4 libbaloofiles4 #MINVER#, baloo
+libbaloofiles.so.4 libbaloofiles4 #MINVER#
  _ZN5Baloo10TagListJob11qt_metacallEN11QMetaObject4CallEiPPv@Base 4:4.12.80
  _ZN5Baloo10TagListJob11qt_metacastEPKc@Base 4:4.12.80
  _ZN5Baloo10TagListJob16staticMetaObjectE@Base 4:4.12.80

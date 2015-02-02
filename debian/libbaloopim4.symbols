@@ -1,5 +1,5 @@
-# SymbolsHelper-Confirmed: 4:4.13.1 amd64
-libbaloopim.so.4 libbaloopim4 #MINVER#, baloo
+# SymbolsHelper-Confirmed: 4:4.14.0 amd64
+libbaloopim.so.4 libbaloopim4 #MINVER#
  _ZN5Baloo3PIM10EmailQuery11addInvolvesERK7QString@Base 4:4.12.80
  _ZN5Baloo3PIM10EmailQuery11bodyMatchesERK7QString@Base 4:4.12.80
  _ZN5Baloo3PIM10EmailQuery11setInvolvesERK11QStringList@Base 4:4.12.80
@@ -9,6 +9,7 @@ libbaloopim.so.4 libbaloopim4 #MINVER#, baloo
  _ZN5Baloo3PIM10EmailQuery13setCollectionERK5QListIxE@Base 4:4.12.80
  _ZN5Baloo3PIM10EmailQuery13setSearchTypeENS1_6OpTypeE@Base 4:4.12.90
  _ZN5Baloo3PIM10EmailQuery14subjectMatchesERK7QString@Base 4:4.12.80
+ _ZN5Baloo3PIM10EmailQuery25setSplitSearchMatchStringEb@Base 4:4.14.0
  _ZN5Baloo3PIM10EmailQuery4execEv@Base 4:4.12.80
  _ZN5Baloo3PIM10EmailQuery5addCcERK7QString@Base 4:4.12.80
  _ZN5Baloo3PIM10EmailQuery5addToERK7QString@Base 4:4.12.80
@@ -67,22 +68,20 @@ libbaloopim.so.4 libbaloopim4 #MINVER#, baloo
  _ZN5Baloo3PIM9NoteQueryD0Ev@Base 4:4.12.80
  _ZN5Baloo3PIM9NoteQueryD1Ev@Base 4:4.12.80
  _ZN5Baloo3PIM9NoteQueryD2Ev@Base 4:4.12.80
- (optional=gccinternal|arch=!amd64)_ZN6Xapian18ValuePostingSourceD0Ev@Base 4:4.12.80
- (optional=gccinternal|arch=!amd64)_ZN6Xapian18ValuePostingSourceD1Ev@Base 4:4.12.80
- (optional=gccinternal|arch=!amd64)_ZN6Xapian18ValuePostingSourceD2Ev@Base 4:4.12.80
  (optional=templinst)_ZN6Xapian5QueryC1IN5QListIS0_E8iteratorEEENS0_2opET_S6_j@Base 4:4.12.90
  (optional=templinst)_ZN6Xapian5QueryC2IN5QListIS0_E8iteratorEEENS0_2opET_S6_j@Base 4:4.12.90
  _ZNK5Baloo3PIM10EmailQuery5limitEv@Base 4:4.12.80
  _ZNK5Baloo3PIM12ContactQuery13matchCriteriaEv@Base 4:4.12.80
  _ZNK5Baloo3PIM12ContactQuery5limitEv@Base 4:4.12.80
  _ZNK5Baloo3PIM9NoteQuery5limitEv@Base 4:4.12.80
- (optional=templinst|arch=!amd64)_ZStplIcSt11char_traitsIcESaIcEESbIT_T0_T1_EPKS3_RKS6_@Base 4:4.12.80
  _ZTIN5Baloo3PIM10EmailQueryE@Base 4:4.12.80
  _ZTIN5Baloo3PIM12ContactQueryE@Base 4:4.12.80
  _ZTIN5Baloo3PIM5QueryE@Base 4:4.12.80
  _ZTIN5Baloo3PIM9NoteQueryE@Base 4:4.12.80
  _ZTIN6Xapian12RuntimeErrorE@Base 4:4.12.97
  _ZTIN6Xapian13DatabaseErrorE@Base 4:4.12.97
+ _ZTIN6Xapian20DatabaseCorruptErrorE@Base 4:4.13.3
+ _ZTIN6Xapian20DatabaseOpeningErrorE@Base 4:4.13.3
  _ZTIN6Xapian5ErrorE@Base 4:4.12.97
  _ZTSN5Baloo3PIM10EmailQueryE@Base 4:4.12.80
  _ZTSN5Baloo3PIM12ContactQueryE@Base 4:4.12.80
@@ -90,6 +89,8 @@ libbaloopim.so.4 libbaloopim4 #MINVER#, baloo
  _ZTSN5Baloo3PIM9NoteQueryE@Base 4:4.12.80
  _ZTSN6Xapian12RuntimeErrorE@Base 4:4.12.97
  _ZTSN6Xapian13DatabaseErrorE@Base 4:4.12.97
+ _ZTSN6Xapian20DatabaseCorruptErrorE@Base 4:4.13.3
+ _ZTSN6Xapian20DatabaseOpeningErrorE@Base 4:4.13.3
  _ZTSN6Xapian5ErrorE@Base 4:4.12.97
  _ZTVN5Baloo3PIM10EmailQueryE@Base 4:4.12.80
  _ZTVN5Baloo3PIM12ContactQueryE@Base 4:4.12.80

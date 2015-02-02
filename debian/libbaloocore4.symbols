@@ -1,5 +1,5 @@
 # SymbolsHelper-Confirmed: 4:4.12.97 i386
-libbaloocore.so.4 libbaloocore4 #MINVER#, baloo
+libbaloocore.so.4 libbaloocore4 #MINVER#
  _ZN5Baloo11SearchStore11qt_metacallEN11QMetaObject4CallEiPPv@Base 4:4.12.80
  _ZN5Baloo11SearchStore11qt_metacastEPKc@Base 4:4.12.80
  _ZN5Baloo11SearchStore12searchStoresEv@Base 4:4.12.80

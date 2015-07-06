@@ -1,6 +1,8 @@
 baloo (4:4.13.1-0~kolab1) unstable; urgency=medium
 
-  * Release baloo from a packaged version
+  * Initial release, based on the kubuntu package.
+  * Update build dependencies.
+  * Update symbols files.
 
  -- Sandro Knauß (Kolab Systems) <knauss@kolabsys.com>  Fri, 02 Jan 2015 15:29:34 +0100
 

@@ -1,0 +1,18 @@
+pkg=baloo-utils
+diversion_added_version=4:4.13.0.1-0~kolab2.2
+this_version=4:4.13.0.1-0~kolab2.2
+
+if
+        test "$1" = install ||
+        dpkg --compare-versions "$2" lt "$diversion_added_version" ||
+        dpkg --compare-versions "$this_version" lt "$2"
+then
+        dpkg-divert --package "$pkg" --add --rename \
+                --divert "/usr/lib/kde4/kio_tags.so.diverted-$pkg" /usr/lib/kde4/kio_tags.so
+        dpkg-divert --package "$pkg" --add --rename \
+                --divert "/usr/lib/kde4/kio_timeline.so.diverted-$pkg" /usr/lib/kde4/kio_timeline.so
+        dpkg-divert --package "$pkg" --add --rename \
+                --divert "/usr/share/kde4/services/tags.protocol.diverted-$pkg" /usr/share/kde4/services/tags.protocol
+        dpkg-divert --package "$pkg" --add --rename \
+                --divert "/usr/share/kde4/services/timeline.protocol.diverted-$pkg" /usr/share/kde4/services/timeline.protocol
+fi

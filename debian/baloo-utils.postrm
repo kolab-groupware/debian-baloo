@@ -1,0 +1,31 @@
+pkg=baloo-utils
+diversion_added_version=4:4.13.0.1-0~kolab2.2
+this_version=4:4.13.0.1-0~kolab2.2
+
+losing_diversion=n
+
+if test "$1" = failed-upgrade
+then
+        dpkg --compare-versions "$2" le-nl "$this_version" ||
+        # An upgrade from a newer version failed.
+        # There is no way for us to know enough to take over from here,
+        # so abort the upgrade.
+        exit 1
+elif dpkg --compare-versions "$2" lt-nl "$diversion_added_version"
+then
+        losing_diversion=y
+fi
+
+case "$1,$losing_diversion" in
+remove,*|abort-install,*|disappear,*)
+*,y)
+        dpkg-divert --package "$pkg" --remove --rename \
+                --divert "/usr/lib/kde4/kio_tags.so.diverted-$pkg" /usr/lib/kde4/kio_tags.so
+        dpkg-divert --package "$pkg" --remove --rename \
+                --divert "/usr/lib/kde4/kio_timeline.so.diverted-$pkg" /usr/lib/kde4/kio_timeline.so
+        dpkg-divert --package "$pkg" --remove --rename \
+                --divert "/usr/share/kde4/services/tags.protocol.diverted-$pkg" /usr/share/kde4/services/tags.protocol
+        dpkg-divert --package "$pkg" --remove --rename \
+                --divert "/usr/share/kde4/services/timeline.protocol.diverted-$pkg" /usr/share/kde4/services/timeline.protocol
+        ;;
+esac

@@ -31,11 +31,11 @@ Package: baloo4
 Architecture: any
 Depends: baloo-utils, ${misc:Depends}, ${shlibs:Depends}
 Replaces: baloo (<< 4:4.13.2-0ubuntu3),
-          kde-runtime (<< 4:4.12.80),
-          kde-runtime-data (<< 4:4.12.80)
+          kde-runtime (<< 4:4.12),
+          kde-runtime-data (<< 4:4.12)
 Breaks: baloo (<< 4:4.13.2-0ubuntu3),
-        kde-runtime (<< 4:4.12.80),
-        kde-runtime-data (<< 4:4.12.80)
+        kde-runtime (<< 4:4.12),
+        kde-runtime-data (<< 4:4.12)
 Conflicts: baloo-kf5, baloo-kf5-data
 Provides: baloo
 Description: framework for searching and managing metadata.
@@ -58,11 +58,11 @@ Package: baloo-utils
 Architecture: any
 Depends: ${misc:Depends}, ${shlibs:Depends}
 Replaces: baloo (<< 4:4.13.2-0ubuntu3),
-          kde-runtime (<< 4:4.12.80),
-          kde-runtime-data (<< 4:4.12.80)
+          kde-runtime (<< 4:4.12),
+          kde-runtime-data (<< 4:4.12)
 Breaks: baloo (<< 4:4.13.2-0ubuntu3),
-        kde-runtime (<< 4:4.12.80),
-        kde-runtime-data (<< 4:4.12.80)
+        kde-runtime (<< 4:4.12),
+        kde-runtime-data (<< 4:4.12)
 Description: framework for searching and managing metadata.
  A framework for searching and managing metadata in KDE.
  .

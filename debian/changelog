@@ -1,4 +1,18 @@
-baloo (4:4.13.1-0~kolab1) unstable; urgency=medium
+baloo (4:4.13.0.1-0~kolab2.2) unstable; urgency=medium
+
+  * add pre/post scripts to create diversion for kio.
+
+ -- Sandro Knauß (Kolab Systems) <knauss@kolabsys.com>  Fri, 20 Feb 2015 12:04:11 +0100
+
+baloo (4:4.13.0.1-0~kolab2.1) unstable; urgency=medium
+
+  * remove break with kde-runtime << 4.12.80
+  * remove patches
+  * do not install kio_tag & kio_timeline
+
+ -- Sandro Knauß (Kolab Systems) <knauss@kolabsys.com>  Thu, 19 Feb 2015 18:56:10 +0100
+
+baloo (4:4.13.0.1-0~kolab1) unstable; urgency=medium
 
   * Initial release, based on the kubuntu package.
   * Update build dependencies.

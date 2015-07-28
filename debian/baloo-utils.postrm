@@ -1,3 +1,7 @@
+#!/bin/sh
+
+set -e
+
 pkg=baloo-utils
 diversion_added_version=4:4.13.0.1-0~kolab2.2
 this_version=4:4.13.0.1-0~kolab2.2

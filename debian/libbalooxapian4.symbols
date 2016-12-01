@@ -34,8 +34,8 @@ libbalooxapian.so.4 libbalooxapian4 #MINVER#
  _ZN5Baloo17XapianSearchStore4execERKNS_5QueryE@Base 4:4.12.80
  _ZN5Baloo17XapianSearchStore4nextEi@Base 4:4.12.80
  _ZN5Baloo17XapianSearchStore5closeEi@Base 4:4.12.80
- _ZN5Baloo17XapianSearchStore6ResultD1Ev@Base 4:4.12.80
- _ZN5Baloo17XapianSearchStore6ResultD2Ev@Base 4:4.12.80
+ (optional)_ZN5Baloo17XapianSearchStore6ResultD1Ev@Base 4:4.12.80
+ (optional)_ZN5Baloo17XapianSearchStore6ResultD2Ev@Base 4:4.12.80
  _ZN5Baloo17XapianSearchStore6dbPathEv@Base 4:4.12.80
  _ZN5Baloo17XapianSearchStore8andQueryERKN6Xapian5QueryES4_@Base 4:4.12.80
  _ZN5Baloo17XapianSearchStore8xapianDbEv@Base 4:4.12.80

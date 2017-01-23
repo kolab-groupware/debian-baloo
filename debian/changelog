@@ -1,3 +1,9 @@
+baloo (4:4.14.3.1-0~kolab1) UNRELEASED; urgency=medium
+
+  * Build baloo 4.14.3.1.
+
+ -- Sandro Knauß <hefee@debian.org>  Wed, 30 Nov 2016 18:30:47 +0100
+
 baloo (4:4.13.0.1-0~kolab2.3) unstable; urgency=low
 
   * Add explicit #! declarations in preinst / postrm scripts for Debian

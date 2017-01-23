@@ -7,20 +7,18 @@ Uploaders: Rohan Garg <rohangarg@kubuntu.org>,
            Maximiliano Curia <maxy@debian.org>
 Build-Depends: cmake,
                debhelper (>= 8),
-               kdepimlibs5-dev (<< 4:4.14),
-               kdepimlibs5-dev (>= 4:4.13),
-               libakonadi-dev (<< 1.13),
-               libakonadi-dev (>= 1.12.42),
+               kdepimlibs5-dev (>= 4:4.13), kdepimlibs5-dev (<< 4:4.14),
+               libakonadi-dev (>= 1.12.42), libakonadi-dev (<< 1.13),
                libattr1-dev,
                libboost-dev,
                libkfilemetadata-dev (>= 4.13.0),
                libqjson-dev (>= 0.8),
-               libx11-dev,
                libxapian-dev,
-               pkg-kde-tools
-Build-Conflicts: kde-sc-dev-latest, libkfilemetadata5-dev
+               pkg-kde-tools,
+               libx11-dev
+Build-Conflicts: libkfilemetadata5-dev,
+                 kde-sc-dev-latest
 Standards-Version: 3.9.5
-XS-Testsuite: autopkgtest
 Homepage: http://projects.kde.org/baloo
 Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-kde/kde-sc/baloo.git
 Vcs-Git: git://anonscm.debian.org/pkg-kde/kde-sc/baloo.git
@@ -29,7 +27,7 @@ X-Ubuntu-Vcs-Bzr: https://code.launchpad.net/~kubuntu-packagers/kubuntu-packagin
 
 Package: baloo4
 Architecture: any
-Depends: baloo-utils, ${misc:Depends}, ${shlibs:Depends}
+Depends: ${misc:Depends}, ${shlibs:Depends}, baloo-utils
 Replaces: baloo (<< 4:4.13.2-0ubuntu3),
           kde-runtime (<< 4:4.12.80),
           kde-runtime-data (<< 4:4.12.80)
@@ -101,6 +99,17 @@ Description: PIM funcationality for Baloo
  .
  Baloo is part of KDE SC.
 
+Package: libbalooqueryparser4
+Architecture: any
+Section: libdevel
+Depends: ${misc:Depends}, ${shlibs:Depends}
+Description: Query Parser for Baloo
+ Baloo is a framework for searching and managing metadata.
+ .
+ This package contains the baloo query parser library ported from Nepomuk.
+ .
+ Baloo is part of KDE SC.
+
 Package: libbalooxapian4
 Architecture: any
 Section: libdevel
@@ -117,6 +126,7 @@ Architecture: any
 Section: libdevel
 Depends: libbaloocore4 (= ${binary:Version}),
          libbaloofiles4 (= ${binary:Version}),
+         libbalooqueryparser4 (= ${binary:Version}),
          libbaloopim4 (= ${binary:Version}),
          libbalooxapian4 (= ${binary:Version}),
          ${misc:Depends},
